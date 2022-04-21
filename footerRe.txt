@@ -1,0 +1,43 @@
+        <!-- footer area start -->
+        <footer id="footer-area">
+            <div class="container">
+
+<style type="text/css">
+    
+	footer#footer-area{
+        background-color:#414140
+    }
+    footer#footer-area table{
+        text-align:left;width:80%;margin:auto
+    }
+    footer#footer-area table tr{
+        border:none;
+    }
+    footer#footer-area table td{
+        border:none;vertical-align:top;width:25%; padding: 0px 10px !important;
+    }
+    footer#footer-area table td p{
+        color:#fff;font-size:13px;
+    }
+    .footHead{
+        color:#e75e3f!important;
+        font-size: 17px !important;
+    }
+    
+    .smallTitle{
+        font-size: 15px !important;
+        font-weight: 600;
+    }
+    footer#footer-area table td a{color:#fff;background:0 0;width:initial;height:initial;line-height:initial;font-size:18px}footer#footer-area 
+
+</style>
+
+</div>                    </ul>
+                
+                <div class="copyright text-center">
+                    <p>
+                        Copyright @ 2022. All right reserved.                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer area end -->
