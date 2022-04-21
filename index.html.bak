@@ -1408,10 +1408,22 @@ footer#footer-area table td{display:table-row;
 
     
         <!-- footer area start -->
-           <!-- footer area start -->
         <footer id="footer-area">
             <div class="container">
 
+                                    <ul class="social list-inline text-center">
+                        <style>
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 769px) { 
+
+footer#footer-area table{
+        text-align:center !important;width:90%;
+    }
+footer#footer-area table td{display: table-row;
+}
+}
+</style>
 <style type="text/css">
     
 	footer#footer-area{
@@ -1442,15 +1454,58 @@ footer#footer-area table td{display:table-row;
 
 </style>
 
+<div class="table">
+<table>
+	<tbody><tr>
+        
+		<td>
+            <p><img src="./tapTouch - Pospal Australia_files/12-5.png" alt="logo" style="width:80%"></p>
+			
+            <a href="https://www.facebook.com/gbepospal/" target="_blank"><p class="footHead"> Like Us On <i class="fab fa-facebook-square"></i></p></a>
+            <p class="footHead"> Follow Us On <i class="fab fa-instagram"></i> </p>
+            <p class="footHead"> Chat With Us On <i class="fab fa-weixin"></i></p>
+            
+		</td>
+        <td>
+            <p class="footHead"> Contact Us!</p>
+            <p><i class="fas fa-phone-volume"></i> Phone: 1300 726 825</p>
+            <p><i class="fas fa-envelope"></i> Email:  info@pospal.com.au</p>
+			<a href="https://u.wechat.com/IFXKI5ZvuvrOaRVFzf_a9UI" title="WeChat: pospal007"><img src="./tapTouch - Pospal Australia_files/WeChat-Image_20190920165335.jpg" width="70%"></a>
+        
+        </td>
+		
+		<td>
+			<p class="footHead">Visit Us!</p>
+            <p class="smallTitle">CBD Office</p>
+            <p>
+			<i class="fas fa-location-arrow"></i> Address: Level 2, 63-69 Dixon St, Haymarket<br>
+			<i class="fas fa-phone-volume"></i>Phone: +61 2 8014 8487</p>
+            <p class="smallTitle">Support Office</p>
+            <p>
+			<i class="fas fa-location-arrow"></i>Address: Unit G1, 3 Clyde St, Rydalmere, NSW 2116<br>
+			<i class="fas fa-phone-volume"></i> Phone: 1300 726 825</p>
+			
+		</td>
+        <td>
+			<p class="footHead">OTHER SERVICES</p>
+            <a href="http://www.gbe.business/"><p>GBE Business</p></a><br>
+            <a href="https://www.pcmarket.com.au/digital-signage/"><p>Digital Signage</p></a><br>
+			<a href="https://www.pcmarket.com.au/business-solutions/pospal/"><p>Office/Retail Supplies</p></a><br>
+			<a href="https://www.pcmarket.com.au/"><p>IT Equipment</p></a><br>
+			<a href="http://gbepospal.com.au/finance/"><p>Finance</p></a>
+		</td>
+	</tr>
+</tbody></table>
 </div>                    </ul>
                 
                 <div class="copyright text-center">
                     <p>
-                        Copyright @ 2022. All right reserved.                    </p>
+                        Copyright @ 2019. All right reserved.                    </p>
                 </div>
             </div>
         </footer>
         <!-- footer area end -->
+
     </div>
     <!-- page wrapper end -->
 
@@ -1464,6 +1519,7 @@ footer#footer-area table td{display:table-row;
     </script>
     <!-- End Facebook Pixel Event Code -->
     <!-- Start of Zendesk Widget script -->
+<iframe src="javascript:false" title="" style="display: none;" src="./tapTouch - Pospal Australia_files/saved_resource.html"></iframe><script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","pcmarket.zendesk.com");/*]]>*/</script>
 <!-- End of Zendesk Widget script -->
 <script type="text/template" id="tmpl-elementor-templates-modal__header">
 	<div class="elementor-templates-modal__header__logo-area"></div>
