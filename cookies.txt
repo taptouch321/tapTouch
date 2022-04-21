@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-pospal.com.au	TRUE	/	FALSE	1999999999	mailchimp_landing_site	http%3A%2F%2Fpospal.com.au%2Fwp-content%2Fthemes%2Fappai%2Fassets%2Fimg%2Fmockups%2Fdownload-app-mockup.png
-pospal.com.au	TRUE	/	FALSE	1999999999	samesite	Strict
-

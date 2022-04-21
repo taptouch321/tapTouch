@@ -1,0 +1,309 @@
+/* Version: 0.9.73 */
+
+:root {
+
+	/*** BEGIN SETUP ***/
+
+	--root-font-size: 62.5%;
+
+	/***
+	VIEWPORT VARIABLES
+	Match these to the viewport width you set in Oxygen global settings.
+	***/
+
+		--vp-min: 32; /* Viewport Min Size in REM (32 = 320px) */
+		--vp-max: 128; /* Viewport Max Size in REM (128 = 1280px) */
+
+	/*
+	GLOBAL COLOR SETUP (HSL)
+	Set the global colors below using HSL variables.
+	You can quickly get the HSL values for a color by pasting its hex code into Google search.
+	*/
+
+		/* PRIMARY COLOR HSL VALUES */
+			--primary-h: 218.23529411765;
+			--primary-s: 100%;
+			--primary-l: 40%;
+
+		/* SECONDARY COLOR HSL VALUES */
+			--secondary-h: 216;
+			--secondary-s: 48.387096774194%;
+			--secondary-l: 93.921568627451%;
+
+		/* ACCENT COLOR HSL VALUES */
+			--accent-h: 23.5;
+			--accent-s: 100%;
+			--accent-l: 47.058823529412%;
+
+		/* BASE COLOR HSL VALUES */
+			--base-h: 221.25;
+			--base-s: 12.121212121212%;
+			--base-l: 25.882352941176%;
+
+		/* SHADE COLOR HSL VALUES
+		Defaulted to black/white & generates grays.
+		Change these values if you want to tint your greys.
+		If you don't need grey shades, you can use this as an alternate base color.
+		*/
+
+		--shade-h: 0;
+		--shade-s: 0%;
+		--shade-l: 0%;
+
+	/***
+	BASE TEXT SIZE
+	Base text sizes are used to calculate the fluid text and heading styles. Adjust accordingly.
+	Headings use same values from H6 (xs) to H1 (xxl).
+	***/
+
+		--base-text-desk: 1.6;
+		--base-text-mob: 1.4;
+
+		/* Mobile Text Protection
+		XS and S text sizes are protected by a max() function.
+		This ensures they never get smaller than the below values.
+		Insert a value with unit attached.
+		1rem = 10px.
+		*/
+
+		--text-xs-stop: 1.1rem;
+		--text-s-stop: 1.2rem;
+
+	/***
+	TEXT SCALE
+	The text scale controls the progression of text sizes.
+	1.067 - Minor Second
+	1.125 - Major Second
+	1.200 - Minor Third
+	1.250 - Major Third
+	1.333 - Perfect Fourth
+	1.414 - Augmented Fouth
+	1.500 - Perfect Fifth
+	1.618 - Golden Ratio
+
+	Most websites should use 1.200, 1.250, 1.333, and 1.414.
+	Other scales will produce more extreme results (but may be suitable in some cases).
+	***/
+
+		--text-scale: 1.333;
+		--mob-text-scale: 1.2;
+		--text-multiplier: 1.5; /* Controls the .text--larger class */
+
+
+	/***
+	FLUID SPACING SYSTEM
+	Base spacing will adjust all spacing globally.
+	The difference between base-space and base-space-min controls the rate of change between desktop and mobile.
+	space-scale controls the variance between each size relative to the others.
+	space-adjust-section controls the amount of top/bottom white space in sections.
+	mob-space-adjust-section offers further tightening of spacing on mobile devices (lower = tighter).
+	***/
+
+		--base-space: 3;
+		--base-space-min: 2.4;
+		--space-scale: 1.5;
+		--mob-space-scale: 1.3; /* Mobile space scale factor */
+		--space-adjust-section: 4; /* Adjusts section padding on Y axis) */
+		--mob-space-adjust-section: 3; /* Mobile-specific section padding adjustment */
+
+		/* DEFAULT LEFT & RIGHT SECTION & HEADER PADDING */
+		--section-padding-x: var(--space-m);
+
+	/***
+	DEFAULT BUTTON STYLING
+	Set the default button style.
+	***/
+
+		/*** SOLID BUTTON STYLE DEFAULTS ***/
+
+		/* BUTTON BACKGROUND COLORS */
+		--btn-primary-bg: var(--primary);
+		--btn-secondary-bg: var(--secondary);
+		--btn-accent-bg: var(--accent);
+		--btn-base-bg: var(--base);
+		--btn-white-bg: var(--shade-white);
+		--btn-black-bg: var(--shade-black);
+
+		/* BUTTON TEXT COLORS */
+		--btn-primary-text: var(--primary-ultra-light);
+		--btn-secondary-text: var(--secondary-ultra-light);
+		--btn-accent-text: var(--accent-ultra-light);
+		--btn-base-text: var(--base-ultra-light);
+		--btn-white-text: var(--shade-black);
+		--btn-black-text: var(--shade-white);
+
+		/* BUTTON BORDER COLORS */
+		--btn-primary-border-color: var(--primary);
+		--btn-secondary-border-color: var(--secondary);
+		--btn-accent-border-color: var(--accent);
+		--btn-base-border-color: var(--base);
+		--btn-white-border-color: var(--shade-white);
+		--btn-black-border-color: var(--shade-black);
+
+		/* BUTTON HOVER BACKGROUND COLOR */
+		--btn-primary-hover: var(--primary-hover);
+		--btn-secondary-hover: var(--secondary-hover);
+		--btn-accent-hover: var(--accent-hover);
+		--btn-base-hover: var(--base-hover);
+		--btn-white-hover: var(--primary-hover); /* Set white button hover color */
+		--btn-black-hover: var(--primary-hover); /* Set black button hover color */
+
+		/* BUTTON HOVER TEXT COLOR */
+		--btn-primary-hover-text: var(--primary-ultra-light);
+		--btn-secondary-hover-text: var(--secondary-ultra-light);
+		--btn-accent-hover-text: var(--accent-ultra-light);
+		--btn-base-hover-text: var(--base-ultra-light);
+		--btn-white-hover-text: var(--shade-white);
+		--btn-black-hover-text: var(--shade-white);
+
+		/* BUTTON HOVER BORDER COLOR */
+		--btn-primary-hover-border-color: var(--primary-hover);
+		--btn-secondary-hover-border-color: var(--secondary-hover);
+		--btn-accent-hover-border-color: var(--accent-hover);
+		--btn-base-hover-border-color: var(--base-hover);
+		--btn-white-hover-border-color: var(--shade-black);
+		--btn-black-hover-border-color: var(--shade-white);
+
+		/* OTHER BUTTON STYLING */
+		--btn-border-size: 0.25rem;
+		--btn-pad-y: 1em; /* Default top/bottom padding */
+		--btn-pad-x: 1.5em; /* Default left/right padding */
+		--btn-radius: 0; /* Default button radius */
+
+		/*** OUTLINE BUTTON STYLE DEFAULTS ***/
+
+		--outline-btn-border-size: 0.25rem; /* Set outline button border width */
+
+		/* OUTLINE BUTTON TEXT COLOR */
+		--primary-outline-btn-text: var(--primary);
+		--secondary-outline-btn-text: var(--secondary);
+		--base-outline-btn-text: var(--base);
+		--accent-outline-btn-text: var(--accent);
+		--white-outline-btn-text: var(--shade-white);
+		--black-outline-btn-text: var(--shade-black);
+
+		/* OUTLINE BUTTON HOVER TEXT COLOR */
+		--primary-outline-hover-text: var(--primary-ultra-light);
+		--secondary-outline-hover-text: var(--secondary-ultra-light);
+		--base-outline-hover-text: var(--base-ultra-light);
+		--accent-outline-hover-text: var(--accent-ultra-light);
+		--white-outline-hover-text: var(--primary-ultra-light);
+		--black-outline-hover-text: var(--primary-ultra-light);
+
+	/***
+	BORDER RADIUS SCALE
+	Set the default scale for border radius.
+	***/
+
+		--base-radius: 1rem;
+		--radius-scale: 1.5;
+
+	/***
+	TOOLTIP DEFAULTS
+	Set the default scale for border radius.
+	***/
+
+		--tooltip-bg: var(--base);
+		--tooltip-text-size: var(--text-s);
+		--tooltip-text-color: var(--shade-white);
+		--tooltip-width: 24rem; /* Default width of tooltip pop-up */
+		--tooltip-underline-thickness: .2rem; /* Link underline weight */
+		--tooltip-underline-style: dashed; /* Link underline style */
+		--tooltip-underline-color: var(--primary); /* Link underline color */
+		--tooltip-link-color: inherit; /* Link text color */
+		--tooltip-link-weight: 500;
+		--tooltip-link-bg: inherit;
+		--tooltip-text-align: center;
+
+	/*
+	SHADING VARIABLES
+	If you want to adjust the generated shade variants, you can adjust the percentages here.
+	Higher percentages are lighter and lower are darker.
+	*/
+
+		--primary-hover-val: 1.15;
+		--primary-ultra-light-val: 95%;
+		--primary-light-val: 85%;
+		--primary-medium-val: 50%;
+		--primary-dark-val: 25%;
+		--primary-ultra-dark-val: 10%;
+
+		--secondary-hover-val: 1.15;
+		--secondary-ultra-light-val: 95%;
+		--secondary-light-val: 85%;
+		--secondary-medium-val: 50%;
+		--secondary-dark-val: 25%;
+		--secondary-ultra-dark-val: 10%;
+
+		--accent-hover-val: 1.15;
+		--accent-ultra-light-val: 95%;
+		--accent-light-val: 85%;
+		--accent-medium-val: 50%;
+		--accent-dark-val: 25%;
+		--accent-ultra-dark-val: 10%;
+
+		--base-hover-val: 1.15;
+		--base-ultra-light-val: 95%;
+		--base-light-val: 85%;
+		--base-medium-val: 50%;
+		--base-dark-val: 25%;
+		--base-ultra-dark-val: 10%;
+
+		--shade-hover-val: 1.15;
+		--shade-ultra-light-val: 95%;
+		--shade-light-val: 85%;
+		--shade-medium-val: 50%;
+		--shade-dark-val: 25%;
+		--shade-ultra-dark-val: 10%;
+
+	/*
+	PURE FALLBACKS
+	These are a backup fallback layer.
+	Values only apply to devices that don't support clamp() or calc().
+	Values are static and non-responsive.
+	The only goal here is to prevent complete breakage on outdated devices.
+	*/
+
+		--text-xs-pure: 1.3rem;
+		--text-s-pure: 1.4rem;
+		--text-m-pure: 1.8rem;
+		--text-l-pure: 2rem;
+		--text-xl-pure: 2.3rem;
+		--text-xxl-pure: 2.6rem;
+
+		--space-xs-pure: 1.9rem;
+		--space-s-pure: 2.1rem;
+		--space-m-pure: 2.4rem;
+		--space-l-pure: 2.7rem;
+		--space-xl-pure: 3rem;
+		--space-xxl-pure: 3.4rem;
+
+		--section-space-xs-pure: 3.8rem;
+		--section-space-s-pure: 4.8rem;
+		--section-space-m-pure: 6rem;
+		--section-space-l-pure: 7.5rem;
+		--section-space-xl-pure: 9.4rem;
+		--section-space-xxl-pure: 11.7rem;
+
+	/*
+	COMPLETELY CUSTOM TYPOGRAPHY
+	Set your own static min and max values for each size.
+	NUMBERS ONLY, NO UNITS (rem/px/etc.).
+	Remove comments to go live.
+	*/
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	/*** END SETUP ***/
+}
