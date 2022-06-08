@@ -416,11 +416,11 @@ body.custom-background { background-color: #ffffff; }
     margin:0;
     padding:0;
     list-style:none;
-    height:36px; line-height:36px;
+    height:50px; line-height:50px;
 	width: 100vw;
     background:black; /* you can change the backgorund color here. */
     font-family:Arial, Helvetica, sans-serif;
-    font-size:13px;
+    font-size: 25px;
 	}
 	ul.nav li {
 		border-right:1px solid white; /* you can change the border color matching to your background color */
@@ -534,11 +534,11 @@ footer#footer-area table td{display:table-row;
         <header class="global-header custom">
 		  <nav class="nav" data-spy="affix" data-offset-top="1">
 				<ul class="nav">				
+				<li><a href="https://taptouchpos.com.au/">Home</a></li>
+				<li><a href="https://taptouchpos.com.au/products">Product</a></li>
+				
 				<li><a href="https://taptouchpos.com.au/contact">Contact Us</a></li>
 				
-				<li><a href="https://taptouchpos.com.au/products">Product</a></li>
-				<li><a href="https://taptouchpos.com.au/">Home</a></li>
-				<li></li>
 
 				</ul>
 		</nav>
@@ -1684,31 +1684,7 @@ var elementorAdminBarConfig = {"elementor_edit_page":{"id":"elementor_edit_page"
 </script>
 <script type="text/javascript" src="./index_files/elementor-admin-bar.min.js.download"></script>
 <script type="text/javascript" src="./index_files/hoverintent-js.min.js.download"></script>
-<script type="text/javascript" src="./index_files/admin-bar.min.js.download"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function(){
-				if(jQuery('#wp-admin-bar-revslider-default').length > 0 && jQuery('rs-module-wrap').length > 0){
-					var aliases = new Array();
-					jQuery('rs-module-wrap').each(function(){
-						aliases.push(jQuery(this).data('alias'));
-					});
-					
-					if(aliases.length > 0){
-						jQuery('#wp-admin-bar-revslider-default li').each(function(){
-							var li = jQuery(this),
-								t = jQuery.trim(li.find('.ab-item .rs-label').data('alias')); //text()
-							
-							if(jQuery.inArray(t,aliases)!=-1){
-							}else{
-								li.remove();
-							}
-						});
-					}
-				}else{
-					jQuery('#wp-admin-bar-revslider').remove();
-				}
-			});
-		</script>
+		
 			<!--[if lte IE 8]>
 		<script type="text/javascript">
 			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, '' ) + ' no-customize-support';
